@@ -1,22 +1,38 @@
 import React from "react";
 
+
 function Contact() {
   return (
-    <div className="text-2xl flex flex-col justify-evenly items-center w-full h-full">
-      <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-        necessitatibus at voluptate quaerat laudantium, dolorum vero, culpa
-        ipsa, inventore illo officia quo nihil reprehenderit quasi tempora
-        dolorem cupiditate quas maxime mollitia autem vitae eligendi. Accusamus
-        magni molestiae ad ab debitis maxime, recusandae ipsum, reiciendis
-        possimus ducimus asperiores magnam placeat deleniti illum, eligendi
-        mollitia tempore laudantium. At officiis numquam, amet, quasi vel itaque
-        quam placeat nisi assumenda veritatis optio, illo dolorem molestiae?
-        Aperiam repudiandae necessitatibus reiciendis, magni doloremque quae
-        sint? Nulla vero totam sit pariatur minima corrupti quod nobis numquam
-        omnis. Rerum saepe distinctio obcaecati aliquam, temporibus quia eum
-        nobis hic.
+    <div className="contact-container flex flex-col justify-center items-center w-full h-full overflow-hidden">
+      <div className="absolute inset-0 z-0 matrix-rain"></div>
+      <h1 className="text-4xl md:text-5xl mb-6 neon-text">Contacto</h1>
+      
+      <p className="text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10">
+        Email: <span className="neon-link">ramirog.juncos@gmail.com</span>
+      </p>
+
+      <p className="text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10">
+        Mi GitHub: 
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/RamiroJuncos"
+          className="neon-link hover-effect text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10"
+        >
+          Click aquí
+        </a>
+      </p>
+
+      <p className="text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10">
+        Mi Linkedin: 
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/ramiro-juncos-64035b303/"
+          className="text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10"
+        >
+          Click aquí
+        </a>
       </p>
     </div>
   );

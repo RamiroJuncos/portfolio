@@ -3,6 +3,7 @@ import React from "react";
 function Proyects() {
   return (
     <div className="text-2xl flex flex-col justify-evenly items-center w-full h-full overflow-y-scroll">
+     
       <h1>Proyects</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate,

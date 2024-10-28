@@ -1,22 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const routes = [
-  { path: "/", label: "Home" },
-  { path: "proyects", label: "Proyects" },
-  { path: "skills", label: "Skills" },
-  { path: "contact", label: "Contact" },
+  { path: "/", label: "Inicio" },
+  { path: "proyects", label: "Proyectos" },
+  { path: "skills", label: "Habilidades" },
+  { path: "contact", label: "Contacto" },
 ];
 
 function Navbar() {
   return (
-    <nav className="h-16 w-full relative z-50 shadow-lg">
+    <nav className="navbar-container relative z-50 shadow-lg">
       <ul className="flex justify-evenly items-center w-full h-full">
         {routes.map(({ path, label }, index) => (
-          <li key={index}>
+          <li key={index} className="neon-item">
             <Link
               to={path}
-              className="text-2xl mx-4 hover:text-red-700 hover:underline "
+              className="hover:text-green-300 neon-effect hover:animate-pulse transition duration-300 cursor-pointer relative group"
             >
               {label}
             </Link>

@@ -1,22 +1,36 @@
 import React from "react";
 
+
+const skills = [
+  { text: "HTML/CSS" },
+  { text: "React" },
+  { text: "JavaScript" },
+  { text: "C#" },
+  { text: "C++" },
+  { text: "Python" },
+  { text: "Arduino" },
+  { text: "Conocimiento en Base de Datos SQLite" },
+  { text: "Express" },
+  { text: "Node.js" }
+];
+
 function Skills() {
   return (
-    <div className="text-2xl flex flex-col justify-evenly items-center w-full h-full">
-      <h1>Skills</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
-        sequi! Ipsum praesentium ratione laudantium illum molestiae at. Ad eum
-        reprehenderit, est natus esse at culpa itaque exercitationem veritatis.
-        Rerum explicabo debitis, id unde eius, doloribus ipsum amet deleniti
-        ipsam repellat earum qui sit! Pariatur tempora amet expedita odit ipsum
-        asperiores. Quas accusantium nostrum at, molestiae ad excepturi
-        necessitatibus voluptatibus possimus adipisci similique vel eveniet
-        atque explicabo tempora facilis nisi nemo! Ipsum, at nihil? Harum
-        adipisci, et veritatis esse aliquam repudiandae, obcaecati aliquid,
-        velit autem eveniet sit recusandae quidem minima quo. Eligendi similique
-        excepturi sed dolor animi id? Eveniet, veritatis eum.
-      </p>
+    <div className="relative min-h-screen bg-black flex flex-col justify-center items-center text-green-400 font-mono overflow-hidden">
+      <div className="absolute inset-0 z-0 matrix-rain"></div>
+      <h1 className="text-4xl md:text-5xl mb-8 tracking-widest text-center neon-text z-10">Habilidades</h1>
+      <ul className="space-y-4 text-2xl md:text-3xl z-10">
+        {skills.map((skill) => (
+          <li
+            key={skill.text}
+            className="hover:text-green-300 neon-effect hover:animate-pulse transition duration-300 cursor-pointer relative group"
+          >
+            <span className="group-hover:before:absolute group-hover:before:-inset-1 group-hover:before:border group-hover:before:border-green-400 group-hover:before:animate-pulse">
+              {skill.text}
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
