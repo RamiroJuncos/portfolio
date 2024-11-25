@@ -3,7 +3,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="contact-container flex flex-col justify-center items-center w-full h-full overflow-hidden">
+    <div className="contact-container relative min-h-screen bg-black flex flex-col justify-center items-center text-green-400 font-mono overflow-hidden">
       <div className="absolute inset-0 z-0 matrix-rain"></div>
       <h1 className="text-4xl md:text-5xl mb-6 neon-text">Contacto</h1>
       
